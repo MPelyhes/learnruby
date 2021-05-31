@@ -17,3 +17,9 @@ def remainder(a, b)
 end
 
 remainder 20, 5
+
+def float_division(a,b)
+  puts a/b.to_i
+end
+
+float_division 6, 4
