@@ -97,3 +97,14 @@ def space_remover(string)
 end
 
 #space_remover "    Hi How are You           "
+
+###### Array Excercises #######
+def nil_array(number)
+   array = []
+   number.times do
+       array.push(nil)
+   end 
+   return "#{array}"
+end
+
+print nil_array 18
