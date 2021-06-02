@@ -107,4 +107,72 @@ def nil_array(number)
    return "#{array}"
 end
 
-print nil_array 18
+# print nil_array 18
+
+def first_element(arr)
+   return "#{arr[0]}"
+end
+
+# print first_element [23, 45, 2, 12, 2]
+
+def third_element(arr)
+   return "#{arr[2]}"
+end
+
+# print third_element [23, 45, 2, 12, 2]
+
+def last_three_elements(arr)
+   return "#{arr.pop(3)}"
+end
+
+# puts last_three_elements [23, 45, 2, 12, 2]
+
+def remove_last_element(arr)
+   puts "#{arr.pop}"
+   return "#{arr}"
+end
+# puts remove_last_element [23, 45, 2, 12, 2]
+
+def remove_first_three_elements(arr)
+   puts "#{arr.shift(3)}"
+   puts "#{arr}"
+end
+
+# remove_first_three_elements [23, 45, 2, 12, 2]
+
+def array_concatenation(arr1, arr2)
+   newArr = arr1 + arr2
+   puts "#{newArr}"
+end
+
+# array_concatenation [1, 2, 3], [4, 5, 6]
+
+def array_difference(arr1, arr2)
+   puts "#{arr1 - arr2}"
+end
+
+# array_difference [1, 2, 2, 3, 4], [2, 3]
+
+def empty_array?(arr)
+   puts arr.empty?
+end
+
+# empty_array? []
+
+def reverse(arr)
+   puts "#{arr.reverse}"
+end
+
+# reverse [5, 4, 3, 2, 1]
+
+def include?(arr, value)
+   puts "#{arr.include?(value)}"
+end
+
+# include? [1, 2, 3, 4], 7
+
+def join(array, separator)
+   puts "#{array.join(separator)}"
+end
+
+join [1, 2, 3, 4, 5], "*"
