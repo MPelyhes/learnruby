@@ -175,4 +175,4 @@ def join(array, separator)
    puts "#{array.join(separator)}"
 end
 
-join [1, 2, 3, 4, 5], "*"
+join [1, 2, 3, 4, 5], "-"
