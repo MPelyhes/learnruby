@@ -175,4 +175,14 @@ def join(array, separator)
    puts "#{array.join(separator)}"
 end
 
-join [1, 2, 3, 4, 5], "-"
+# join [1, 2, 3, 4, 5], "-"
+
+###### Basic Ruby Hashes ######
+
+first_hash = {
+   "key" => "value",
+   "log" => "this",
+   "map" => "hash"
+}
+
+puts first_hash
