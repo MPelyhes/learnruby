@@ -179,10 +179,26 @@ end
 
 ###### Basic Ruby Hashes ######
 
-first_hash = {
-   "key" => "value",
-   "log" => "this",
-   "map" => "hash"
-}
+# first_hash = {
+#    "key" => "value",
+#    "log" => "this",
+#    "map" => "hash"
+# }
 
-puts first_hash
+# puts first_hash
+
+# symbolic_hash ={
+#    ford: "mustang",
+#    nissan: "ultima",
+#    moby: "dick"
+# }
+
+# puts symbolic_hash
+
+########################## HASH EXCERCISES #####################################
+
+def create_favorite_hash(color, number)
+   return { color: "#{color}", number: "#{number}"}
+end
+
+puts create_favorite_hash "blue", 12
