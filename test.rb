@@ -263,3 +263,16 @@ def reduce_sum(array)
 end
 
 puts reduce_sum [1, 2, 3, 4, 5]
+
+def sub_one_hundred(array)
+   new_array = []
+   for el in array do
+      if el < 100
+         new_array.push(el)
+      end
+   end
+   return new_array
+end
+
+print sub_one_hundred [99, 101, 88, 4, 2000, 50]
+
