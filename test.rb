@@ -208,7 +208,7 @@ def favorite_color(favorite_list)
    return favorite_list[:color]
 end
 
-puts favorite_color (my_favorites)
+# puts favorite_color (my_favorites)
 
 def favorite_number(favorite_list)
    if favorite_list[:number]
@@ -218,14 +218,14 @@ def favorite_number(favorite_list)
    end
 end
 
-puts favorite_number my_favorites
+# puts favorite_number my_favorites
 
 def update_favorite_movie(favorite_list, movie)
    favorite_list[:movie] = "#{movie}"
    return favorite_list
 end
 
-puts update_favorite_movie my_favorites, "Lord of the Rings"
+# puts update_favorite_movie my_favorites, "Lord of the Rings"
 
 def remove_favorite_number(favorite_list)
    favorite_list.delete(:number)
@@ -238,16 +238,28 @@ def favorite_categories(favorite_list)
    return favorite_list.keys
 end
 
-puts favorite_categories my_favorites
+# puts favorite_categories my_favorites
 
 def favorite_items(favorite_list)
    return favorite_list.values
 end
 
-puts favorite_items my_favorites
+# puts favorite_items my_favorites
 
 def merge_favorites(original_list, additional_list)
    return original_list.merge(additional_list)
 end
 
-puts merge_favorites my_favorites, second_hash
+# puts merge_favorites my_favorites, second_hash
+
+##################### Methods #########################
+
+def reduce_sum(array)
+   sum = 0;
+   for el in array
+      sum += el
+   end
+   return sum;
+end
+
+puts reduce_sum [1, 2, 3, 4, 5]
