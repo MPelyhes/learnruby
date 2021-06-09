@@ -284,4 +284,16 @@ def double(array)
    return new_array
 end
 
-print double [4, 2, 5, 99, -4]
+# print double [4, 2, 5, 99, -4]
+
+def array_max(array)
+   temp = 0;
+   for el in array do
+      if el > temp
+         temp = el
+      end
+   end
+   return temp
+end
+
+# print array_max [5, 17, -4, 20, 12]
