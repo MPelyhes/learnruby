@@ -297,3 +297,13 @@ def array_max(array)
 end
 
 # print array_max [5, 17, -4, 20, 12]
+
+def reduce_product(array)
+   product = 1
+   for el in array do
+      product *= el
+   end
+   return product
+end
+
+puts reduce_product [1, 2, 3, 4]
