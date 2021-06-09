@@ -262,7 +262,7 @@ def reduce_sum(array)
    return sum;
 end
 
-puts reduce_sum [1, 2, 3, 4, 5]
+# puts reduce_sum [1, 2, 3, 4, 5]
 
 def sub_one_hundred(array)
    new_array = []
@@ -274,5 +274,14 @@ def sub_one_hundred(array)
    return new_array
 end
 
-print sub_one_hundred [99, 101, 88, 4, 2000, 50]
+# print sub_one_hundred [99, 101, 88, 4, 2000, 50]
 
+def double(array)
+   new_array = [];
+   for el in array do
+      new_array.push(el * 2)
+   end
+   return new_array
+end
+
+print double [4, 2, 5, 99, -4]
