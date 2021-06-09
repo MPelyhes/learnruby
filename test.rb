@@ -306,10 +306,22 @@ def reduce_product(array)
    return product
 end
 
-puts reduce_product [1, 2, 3, 4]
+# puts reduce_product [1, 2, 3, 4]
 
 def reverse(array)
    array.reverse
 end
 
-print reverse [1, 2, 3, 4]
+# print reverse [1, 2, 3, 4]
+
+def reverse_it(array)
+   start = array.length() -1
+   new_array = []
+   while start >= 0 do
+      new_array.push(array[start])
+      start -= 1
+   end
+return new_array
+end
+
+print reverse_it [1, 2, 3, 4]
