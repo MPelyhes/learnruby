@@ -307,3 +307,9 @@ def reduce_product(array)
 end
 
 puts reduce_product [1, 2, 3, 4]
+
+def reverse(array)
+   array.reverse
+end
+
+print reverse [1, 2, 3, 4]
