@@ -337,4 +337,10 @@ def skip_it(array)
    return new_array
 end
 
-print skip_it [2, 1, 3, 2, 5, 1, 2, 6, 2, 7, 1, 5, 6, 3, 2, 6, 2, 1, 2]
+# print skip_it [2, 1, 3, 2, 5, 1, 2, 6, 2, 7, 1, 5, 6, 3, 2, 6, 2, 1, 2]
+
+def string_reverse(str)
+   str.reverse
+end
+
+puts string_reverse "Better turn this all around!"
