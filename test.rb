@@ -324,4 +324,17 @@ def reverse_it(array)
 return new_array
 end
 
-print reverse_it [1, 2, 3, 4]
+# print reverse_it [1, 2, 3, 4]
+
+def skip_it(array)
+   skip_index = 0
+   length = array.length() - 1
+   new_array = []
+   while skip_index <= length do
+      new_array.push(array[skip_index])
+      skip_index += array[skip_index]
+   end
+   return new_array
+end
+
+print skip_it [2, 1, 3, 2, 5, 1, 2, 6, 2, 7, 1, 5, 6, 3, 2, 6, 2, 1, 2]
