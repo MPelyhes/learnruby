@@ -343,4 +343,32 @@ def string_reverse(str)
    str.reverse
 end
 
-puts string_reverse "Better turn this all around!"
+# puts string_reverse "Better turn this all around!"
+
+def show_me_the_money(string)
+   string.index("$") ? true : false
+end
+
+puts show_me_the_money "There ain't no money here$"
+
+# def alternate_captials(string)
+#    down_string = string.downcase
+#    index = 1 
+#    length = string.length() - 1
+# puts length
+#    while index <= length do 
+#       if index.even? == true
+#          puts index.even?
+#          down_string[index].capitalize()
+#          index += 1
+#       else
+#          index += 1
+#    end
+#    puts index
+# return down_string
+# end
+
+
+end
+
+puts alternate_captials "this is a test OF STUFF"
