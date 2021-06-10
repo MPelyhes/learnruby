@@ -369,8 +369,6 @@ def first_duplicate(string)
    index = 0
    while index < string.length() - 1
       if string[index] == string[index + 1]
-         puts string[index]
-         puts string[index + 1]
          return string[index]
       break
       else
@@ -379,4 +377,10 @@ def first_duplicate(string)
    end
 end
 
-puts first_duplicate "This is sso cool"
+puts first_duplicate "abcdefghhijkkloooop"
+
+def palindrome(string)
+   string == string.reverse ? true : false
+end
+
+p palindrome "racecar"
