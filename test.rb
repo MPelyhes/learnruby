@@ -377,10 +377,24 @@ def first_duplicate(string)
    end
 end
 
-puts first_duplicate "abcdefghhijkkloooop"
+# puts first_duplicate "abcdefghhijkkloooop"
 
 def palindrome(string)
    string == string.reverse ? true : false
 end
 
-p palindrome "racecar"
+# p palindrome "racecar"
+
+def hamming(str1, str2)
+   index = 0
+   count = 0
+   while index <= str1.length() - 1
+      if str1[index] != str2[index]
+         count += 1
+      end
+      index += 1
+   end
+return count
+end
+
+p hamming "ABCDEFG", "ABCDEFG"
