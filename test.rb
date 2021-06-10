@@ -363,4 +363,20 @@ def alternate_captials(string)
    return new_string
 end
 
-puts alternate_captials "hello, how are your porcupines today?"
+# puts alternate_captials "hello, how are your porcupines today?"
+
+def first_duplicate(string)
+   index = 0
+   while index < string.length() - 1
+      if string[index] == string[index + 1]
+         puts string[index]
+         puts string[index + 1]
+         return string[index]
+      break
+      else
+         index += 1
+      end
+   end
+end
+
+puts first_duplicate "This is sso cool"
