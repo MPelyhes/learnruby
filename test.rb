@@ -349,26 +349,18 @@ def show_me_the_money(string)
    string.index("$") ? true : false
 end
 
-puts show_me_the_money "There ain't no money here$"
+# puts show_me_the_money "There ain't no money here$"
 
-# def alternate_captials(string)
-#    down_string = string.downcase
-#    index = 1 
-#    length = string.length() - 1
-# puts length
-#    while index <= length do 
-#       if index.even? == true
-#          puts index.even?
-#          down_string[index].capitalize()
-#          index += 1
-#       else
-#          index += 1
-#    end
-#    puts index
-# return down_string
-# end
-
-
+def alternate_captials(string)
+   new_string = string.downcase
+   index = 0;
+   while index < string.length() - 1
+      index += 1
+      if index.odd?
+         new_string[index] = new_string[index].upcase
+      end
+   end
+   return new_string
 end
 
-puts alternate_captials "this is a test OF STUFF"
+puts alternate_captials "hello, how are your porcupines today?"
