@@ -415,4 +415,30 @@ def fiiz_buzz(num)
    end
 end
 
-p fiiz_buzz 15
+# p fiiz_buzz 15
+
+def fibonacci(num)
+   if num == 1
+      return 0
+   end
+   if num < 4
+      return 1
+   end
+   
+   second_last = 1
+   last = 2
+   sum = 2
+   count = 4
+
+   while count < num
+      sum = second_last + last
+      second_last = last
+      last = sum
+      count += 1
+   end
+   
+   return sum
+end
+
+p fibonacci 9
+
