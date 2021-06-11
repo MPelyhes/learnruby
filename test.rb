@@ -397,4 +397,22 @@ def hamming(str1, str2)
 return count
 end
 
-p hamming "ABCDEFG", "ABCDEFG"
+# p hamming "ABCDEFG", "ABCDEFG"
+
+def fiiz_buzz(num)
+   count = 1
+   while count <= num do
+      if count % 3 == 0 && count % 5 == 0
+         p "FIZZBUZZ"
+      elsif count % 3 == 0
+         p "FIZZ"
+      elsif count % 5 == 0
+         p "BUZZ"
+      else 
+         p "#{count}"
+      end
+      count += 1
+   end
+end
+
+p fiiz_buzz 15
