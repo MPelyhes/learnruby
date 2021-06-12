@@ -484,3 +484,14 @@ return steps
 end
 # p collatz 12
 
+def array_mesh_1(arr1, arr2)
+   new_array = []
+   arr1.each do|n|
+      arr2.each do |x|
+         new_array.push("#{n}#{x}")
+      end
+   end
+   return new_array
+end
+
+p array_mesh_1 ["a", "b", "c"], ["d", "e", "f", "g"]
