@@ -494,4 +494,18 @@ def array_mesh_1(arr1, arr2)
    return new_array
 end
 
-p array_mesh_1 ["a", "b", "c"], ["d", "e", "f", "g"]
+# p array_mesh_1 ["a", "b", "c"], ["d", "e", "f", "g"]
+
+def array_mesh_2(array)
+    new_array = []
+    array.each do |n|
+      array.each do |x|
+         if n != x
+            new_array.push(n + x)
+         end
+      end
+   end
+   return new_array
+end
+
+p array_mesh_2 ["a", "b", "c", "d"]
