@@ -467,4 +467,20 @@ def multiples_3_and_5 (num)
    return sum
 end
 
-p multiples_3_and_5 1000
+# p multiples_3_and_5 1000
+
+def collatz(num)
+   steps = 0
+   while num > 1 
+      if num.even?
+         num = num /2
+      else 
+         num = num * 3 + 1
+      end
+   steps +=1
+   p num
+   end
+return steps
+end
+# p collatz 12
+
