@@ -452,4 +452,19 @@ def leap_year(year)
 return true
 end
 
-p leap_year 1996
+# p leap_year 1996
+
+def multiples_3_and_5 (num)
+   sum = 0
+   count = 0
+
+   while count < num
+      if count % 3 == 0 || count % 5 == 0
+         sum += count
+      end
+      count += 1
+   end
+   return sum
+end
+
+p multiples_3_and_5 1000
