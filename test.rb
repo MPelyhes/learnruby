@@ -440,5 +440,16 @@ def fibonacci(num)
    return sum
 end
 
-p fibonacci 9
+# p fibonacci 9
 
+def leap_year(year)
+   if year % 4 != 0
+      return false
+   end
+   if  year % 100 == 0 && year % 400 != 0
+      return false
+   end
+return true
+end
+
+p leap_year 1996
