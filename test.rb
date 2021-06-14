@@ -558,3 +558,20 @@ end
 
 menu = {"hot dog" => 2, "hamburger" => 3, "steak sandwich" => 5, "fries" => 1, "cole slaw" => 1, "soda" => 2}
 # p order_the_whole_menu menu
+
+def popular_posts(array)
+   popular = []
+   for post in array do
+      if post[:likes] > 1000
+         popular.push(post)
+      end
+   end
+return popular
+end
+
+p popular_posts [
+   {title: 'Me Eating Pizza', submitted_by: "Joelle P.", likes: 1549},
+   {title: 'i never knew how cool i was until now', submitted_by: "Lyndon Johnson", likes: 3},
+   {title: 'best selfie evar!!!', submitted_by: "Patti Q.", likes: 1092},
+   {title: 'Mondays are the worst', submitted_by: "Aunty Em", likes: 644}
+   ]
