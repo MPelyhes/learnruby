@@ -546,4 +546,15 @@ def count_votes(array)
    return votes
 end
 
-p count_votes ["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"]
+# p count_votes ["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"]
+
+def order_the_whole_menu(menu)
+   cost = 0
+   menu.each do | item, price |
+      cost += price
+   end
+   return cost
+end
+
+menu = {"hot dog" => 2, "hamburger" => 3, "steak sandwich" => 5, "fries" => 1, "cole slaw" => 1, "soda" => 2}
+# p order_the_whole_menu menu
