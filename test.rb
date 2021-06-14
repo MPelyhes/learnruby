@@ -508,4 +508,28 @@ def array_mesh_2(array)
    return new_array
 end
 
-p array_mesh_2 ["a", "b", "c", "d"]
+# p array_mesh_2 ["a", "b", "c", "d"]
+
+def most_frequent_letter(string)
+   hash = {}
+   just_letters = string.gsub(/\s+/, "").chars
+   for letter in just_letters do
+      if !hash[letter]
+         hash[letter] = 1
+      else 
+         hash[letter] += 1
+      end
+   end
+
+   current_high = 0
+   most_frequent = ""
+   hash.each do | letter, count |
+      if count > current_high
+         current_high = count
+         most_frequent = letter
+      end
+   end
+   return most_frequent
+end
+
+# p most_frequent_letter "peter piper picked a peck of pickled peppers"
