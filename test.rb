@@ -533,3 +533,17 @@ def most_frequent_letter(string)
 end
 
 # p most_frequent_letter "peter piper picked a peck of pickled peppers"
+
+def count_votes(array)
+   votes = {}
+   for el in array do
+      if !votes[el]
+         votes[el] = 1
+      else 
+         votes[el] += 1
+      end
+   end
+   return votes
+end
+
+p count_votes ["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"]
